@@ -12,3 +12,7 @@ result=requests.post(f'{url}?key={key}',data).json()
 print(result)
 
 # result.get('data').get('translations')[0].get(translatedText)
+
+
+
+# 웹훅주소:  https://api.telegram.org/bot769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00/setWebhook?url=https://yunsy.pythonanywhere.com/769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00
