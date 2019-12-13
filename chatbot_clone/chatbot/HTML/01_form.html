@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/signup">
+        <!-- label for, id 연결됨 -->
+        <label for="text">TEXT: </label>
+        <input type="text" id="text"><br>
+        <label for="number">NUMBER: </label>
+        <input type="number" id="number"><br>
+  
+        PWD: <input type="password"><br>
+        EMAIL: <input type="email"><br>
+        DATE:   <input type="date"><br>
+
+        <!-- Radio: 단일선택 -->
+        <input type="radio" name="gender" value="1">M
+        <input type="radio" name="gender" value="2">F
+        <input type="radio" name="gender" value="3">ROBOT 
+
+        <br>
+
+        <!-- Checkbox: 다중선택 -->
+        <input type="checkbox" name="option" value="1">Python
+        <input type="checkbox" name="option" value="2">HTML
+
+        <br>
+
+        <!-- Select -->
+        <select name="country" id="">
+            <option value="1">한국</option>
+            <option value="2">미국</option>
+            <option value="3">중국</option>
+        </select>
+
+        <input type="submit" value="submit"><br>
+    </form>
+</body>
+</html>

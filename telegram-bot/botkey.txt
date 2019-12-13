@@ -1,0 +1,22 @@
+[API 토큰]
+769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00
+
+[API 요청 주소]
+https://api.telegram.org/bot769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00/getMe
+
+[나의 CHAT ID]
+936899444
+
+[sendMessage 샘플]
+https://api.telegram.org/bot769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00/sendMessage?chat_id=936899444&text=안녕
+
+[ngrok 임시주소]
+https://6b885244.ngrok.io
+
+https://api.telegram.org/bot769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00/setWebhook?url=https://6b885244.ngrok.io/769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00
+
+https://api.telegram.org/bot769483976:AAEJQsJkzcNww_yCCUz2zdfHO3DJwv2Tl00/getWebhookInfo
+
+
+
+
