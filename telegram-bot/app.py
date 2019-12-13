@@ -4,9 +4,14 @@ from decouple import config
 
 app = Flask(__name__)
 
+# telegram api
 url='https://api.telegram.org'
 token=config('TELEGRAM_BOT_TOKEN')
 chat_id=config('CHAT_ID')
+
+# google api
+google_url='https://translation.googleapis.com/language/translate/v2'
+google_key=config('GOOGLE_TOKEN')
 
 @app.route('/')
 def hello():
@@ -27,6 +32,17 @@ def telegram():
     # 사용자가 로또라고 입력하면 로또 번호 6개 올려주기
     if message == '로또':
         result = sorted(random.sample(range(1,46),6))
+
+    elif message[:4] == '/번역 ':
+        data= {
+            'q': message[4:],
+            'source': 'ko',
+            'target': 'en'
+        }
+        # 1. google api 번역 요청
+        response = requests.post(f'{google_url}?key={google_key}',data).json()
+        # 2. 번역 결과 추출 -> 답장 변수에 저장
+        result = response['data']['translations'][0]['translatedText']
 
     # 그 외의 경우 메아리
     else:
